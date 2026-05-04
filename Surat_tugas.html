@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surat Tugas PMP 2026</title>
+</head>
+<body>
+    
+    <!-- 1. SIDEBAR (Sama persis kayak di dashboard.html) -->
+    <nav>
+        <h3 style="padding: 0 25px; margin-bottom: 10px; color: #125B34;">Menu PMP</h3>
+        <ul>
+            <!-- Tambahan: Link buat balik ke Dashboard awal -->
+            <li><a href="dashboard.html" style="font-weight: bold; color: #125B34;">Halaman Utama</a></li>
+            
+            <li><a href="surat_tugas.html">Surat Tugas PMP</a></li>
+            <li><a href="struktur.html">Struktur PMP</a></li>
+            <li><a href="keuangan.html">Laporan Keuangan PMP</a></li>
+            <li><a href="jadwal.html">Jadwal Kegiatan</a></li>
+            <li><a href="lampiran.html">Lampiran Kegiatan</a></li>
+        </ul>
+        
+        <div style="padding: 20px 25px;">
+            <a href="index.html" class="tombol-nav" style="width: 100%;">Kembali ke Login</a>
+        </div>
+    </nav>
+
+    <!-- 2. HEADER (Sama persis kayak di dashboard.html) -->
+    <header>
+        <h2>Dashboard PMP 2026</h2>
+    </header>
+
+    <!-- 3. AREA KONTEN UTAMA (Nah, ini yang BEDA di tiap halaman) -->
+   <main>
+    <div class="konten-dashboard">
+        <h2 style="color: #125B34; margin-bottom: 10px;">Surat Tugas PMP</h2>
+        <p style="margin-bottom: 20px;">Berikut adalah lampiran surat tugas kegiatan PMP:</p>
+        
+        <!-- BUNGKUSAN FLEXBOX BIAR SEBELAHAN -->
+        <div style="display: flex; gap: 20px; align-items: flex-start; justify-content: center;">
+            
+            <!-- Gambar Halaman 1 -->
+            <!-- Pastiin src-nya sesuai sama nama file gambar halaman 1 lu -->
+            <img src="surat_tugas1.png" alt="Surat Tugas Hal 1" style="width: 50%; border: 1px solid #ddd; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+            
+            <!-- Gambar Halaman 2 -->
+            <!-- Pastiin src-nya sesuai sama nama file gambar halaman 2 lu -->
+            <img src="surat_tugas2.png" alt="Surat Tugas Hal 2" style="width: 50%; border: 1px solid #ddd; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+            
+        </div>
+        
+    </div>
+</main>
+
+</body>
+</html>

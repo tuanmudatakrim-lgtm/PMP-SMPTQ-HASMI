@@ -1,0 +1,143 @@
+/* =========================================
+   STYLE KHUSUS HALAMAN DASHBOARD
+   Tema: Hijau Kampus & Kuning Emas
+========================================= */
+
+/* 1. RESET DASAR */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8faf9; 
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* 2. SIDEBAR DASHBOARD (Rapi di Kiri) */
+nav {
+    background-color: #ffffff; 
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    border-right: 1px solid #ddd;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.05); 
+    z-index: 100; /* Biar sidebar selalu di depan */
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 25px; 
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+    border-left: 4px solid transparent; 
+}
+
+nav ul li a:hover {
+    background-color: #eaf4ed; 
+    color: #125B34; 
+    border-left: 4px solid #F2C94C; 
+}
+
+/* 3. HEADER (Atas Kanan, nyesuain Sidebar) */
+header {
+    background-color: #125B34; 
+    color: white;
+    padding: 20px;
+    text-align: center; 
+    border-bottom: 4px solid #F2C94C; 
+    margin-left: 250px; /* Penting: Biar gak ketutup sidebar */
+}
+
+/* 4. AREA KONTEN UTAMA DASHBOARD */
+main {
+    margin-left: 250px; /* Jarakin selebar sidebar */
+    padding: 40px 50px; 
+    min-height: calc(100vh - 70px); 
+    display: block; /* Mode normal dari atas ke bawah */
+}
+
+/* 5. ISI KONTEN DASHBOARD (Kotak-kotak Card) */
+.konten-dashboard {
+    text-align: left;
+    width: 100%;
+}
+
+.welcome-banner {
+    background-color: white;
+    padding: 20px 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+    border-left: 5px solid #125B34; 
+}
+
+.welcome-banner h2 {
+    color: #125B34;
+    margin-bottom: 5px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 25px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    border-top: 4px solid #F2C94C; 
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    color: #125B34;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* 6. STYLING TOMBOL & GAMBAR */
+button, .btn-primary, .tombol-nav {
+    background-color: #125B34; 
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+button:hover, .btn-primary:hover, .tombol-nav:hover {
+    background-color: #F2C94C; 
+    color: #125B34; 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block; 
+}
